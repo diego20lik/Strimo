@@ -1,0 +1,143 @@
+.player-fondo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.video {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  max-height: 500px;
+  background-color: black;
+}
+.player{
+  max-height: 500px;
+  height: 100%;
+}
+.chat {
+  width: 30%;
+  min-height: 100%;
+}
+.controles {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  height: 100%;
+}
+.titulo-player {
+  height: 33%;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+.medio {
+  display: flex;
+  height: 33%;
+  color: white;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.play-button {
+  /*background-color: white;*/
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.play-button:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.bottom-player {
+  height: 33%;
+  display: flex;
+  /*align-items: flex-end;*/
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  background: linear-gradient(transparent, rgba(84, 84, 84, 0.6));
+}
+.botton-pannel{
+  position:absolute;
+  bottom: 0;
+  height: fit-content;
+
+}
+.bottom-player img:hover{
+  cursor: pointer;
+}
+#volume-slider{
+  width: 10%!important;
+  opacity: 0;
+}
+#volume-slider:hover{
+  opacity: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+.mute-button:hover + #volume-slider{
+  opacity: 1;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+@media (max-width: 767px) {
+  .player-fondo{
+    flex-direction: column;
+  }
+ .video{
+   width: 100vw!important;
+   margin-bottom: 30px;
+ } 
+ .chat{
+   width: 100%!important;
+   height: 500px!important;
+  }
+  .player{
+    width: 100%!important;
+    height: 100%;
+  }
+} 
+@-webkit-keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateX(-20px);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}

@@ -1,0 +1,14 @@
+.ticket{
+    background-color: #f3f3f3;
+    border-radius: 25px;
+}
+.fondo-redes-sociales{
+    background-color: #81defe;
+    padding: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.fondo-redes-sociales img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}

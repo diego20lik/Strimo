@@ -1,0 +1,11 @@
+.overlay-progress{
+  position: fixed;
+  top: 0;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+}

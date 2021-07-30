@@ -1,0 +1,110 @@
+.titulo-importante {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+.titulo-secundario {
+  text-align: center;
+  justify-content: center;
+  width: 100% !important;
+}
+.caja-blanca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  height: 35vh;
+  min-height: 300px;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.seccion {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seccion-mitad {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.boton-pago {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: 0.3s;
+}
+.boton-pago:hover {
+  cursor: pointer;
+  transform: scale(1.04) !important;
+  background-color: #f9f9f9;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.boton-pago img {
+  width: 60%;
+  min-width: 100px;
+}
+.form-pago {
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  /* border-style: solid; */
+  border-width: 0.1rem;
+  /* border-color: #93c83e; */
+  padding: 3vw;
+}
+.form-layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.form-layout input {
+  text-align: center;
+  margin-top: 40px;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: #f3f3f3;
+  height: 30px;
+  border-radius: 5px;
+}
+.form-layout .precio {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  /* align-items: center; */
+  /* text-align: center; */
+  /* justify-content: center; */
+}
+.form-layout .precio h4 {
+  width: 0%;
+}
+.form-layout .precio h2 {
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .form-layout .precio h4 {
+    width: fit-content;
+  }
+}

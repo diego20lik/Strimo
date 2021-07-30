@@ -1,0 +1,108 @@
+.pagina-perfil {
+  position: relative;
+  padding: 20px;
+  min-height: 90vh;
+  display: flex;
+}
+.perfil-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: fit-content;
+  margin-right: 10px;
+}
+.imagen-perfil-perfil {
+  border-radius: 100%;
+}
+.imagen-perfil-perfil:hover {
+  cursor: pointer;
+}
+.perfil-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 60%;
+}
+.upload-content {
+  border-radius: 25px;
+  background-color: #f3f3f3;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.upload-content > * {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all 1s;
+}
+.upload-content > *:hover {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+}
+.crea-video-link {
+  margin: 0;
+  color: black;
+}
+.select-profile-content {
+  width: 100%;
+  display: flex;
+}
+.select-profile-content > * {
+  width: 100%;
+}
+.profile-content-button {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.profile-content-button > * {
+  margin: 0px !important;
+}
+.profile-content-button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  border-bottom: solid;
+  border-color: #3e28b2;
+}
+.linea {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: rgb(120, 120, 120);
+  height: 1px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .perfil-info {
+    position: sticky;
+    top: 10px;
+    left: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .pagina-perfil {
+    flex-direction: column;
+  }
+  .pagina-perfil > * {
+    width: 100% !important;
+  }
+  .perfil-contenido {
+    padding-top: 30px !important;
+    padding: 5px;
+  }
+  .perfil-info {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,13 @@
+.imagen-nft-popup img {
+  border-radius: 5px;
+  /* width: 100%; */
+}
+.borde-gris {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.justify-content-evenly {
+  justify-content: space-evenly;
+}

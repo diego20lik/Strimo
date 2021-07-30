@@ -1,0 +1,236 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #81defe;
+  border-radius: 10px;
+  border-width: 1px;
+  border-left: solid;
+  border-left-color: white;
+  border-left-width: 1px;
+  transition: all 1s;
+}
+::-webkit-scrollbar-thumb:hover {
+  transition: all 1s;
+  background: #3e28b2;
+}
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Font/GothamLight.ttf"); /* IE9 Compat Modes */
+}
+.degradado {
+  position: relative;
+  background: linear-gradient(#81defe, #3e28b2);
+  min-height: 100%;
+}
+input {
+  border-color: transparent;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  height: 37px;
+}
+hr {
+  /* border-top: gray !important; */
+  border-width: 1px !important;
+  width: 100%;
+}
+.fondo {
+  background-color: #3e28b2;
+}
+textarea {
+  border-color: transparent;
+  background-color: #f3f3f3;
+}
+.primario {
+  color: white;
+  border: transparent;
+  background-color: #3e27b5;
+  border-radius: 5px;
+  min-height: 37px;
+}
+.primario:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #3e27b5;
+  border-color: #3e27b5;
+  border-style: solid;
+  border-width: 1px;
+  transition: 0.5s;
+}
+.secundario {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #3e27b5;
+  /* width: 40%; */
+  border: transparent;
+  background-color: #fcfeff;
+  border-color: #3e27b5;
+  border-style: solid;
+  border-width: 1px;
+  min-height: 37px;
+}
+.secundario:hover {
+  cursor: pointer;
+  background-color: #3e27b5;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  transition: 0.5s;
+}
+.tercero {
+  border-radius: 5px;
+  /* margin-bottom: 10px; */
+  color: #3e27b5;
+  /* width: 40%; */
+  border: transparent;
+  background-color: #fcfeff;
+  /* border-color: #3e27b5; */
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  min-height: 37px;
+}
+.nsfw {
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: red;
+  color: red;
+  border-width: 1px;
+  width: fit-content;
+  opacity: 0.7;
+}
+.privado {
+  opacity: 0.7;
+  width: fit-content;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: blue;
+  color: blue;
+  border-width: 1px;
+}
+.blanco {
+  color: white !important;
+}
+.text-center {
+  text-align: center;
+}
+.horizontal-center {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.texto-vertical {
+  writing-mode: tb-rl;
+}
+.form-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0px auto; */
+  padding: 20px;
+  background-color: white;
+  border-radius: 25px;
+  /* height: 400px; */
+  min-height: 400px;
+  width: 60%;
+  z-index: 1;
+  /* min-width: fit-content; */
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.file-form {
+  background-color: #f3f3f3;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+.image-input {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* padding-left: 40%; */
+  /* color: brown; */
+}
+.profile-image-viewer {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 10px;
+}
+.bubbles-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url("../images/puntosBlancos.png");
+  opacity: 0.5;
+  animation: background-jumbo 20s linear infinite;
+}
+.fondo-finance {
+  height: 90vh;
+  background-color: rgb(20, 20, 20);
+  background-image: url("../images/backgorundFinance.png");
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  animation: background-finance 30s linear infinite;
+}
+@keyframes background-jumbo {
+  0% {
+    background-position-y: 375px;
+  }
+  100% {
+    background-position-y: 0%;
+  }
+}
+@keyframes background-finance {
+  0% {
+    background-position-y: 0px;
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-y: 411px;
+    background-position-x: 378px;
+  }
+}
+@media (max-width: 767px) {
+  .form-media {
+    width: 100%;
+  }
+}

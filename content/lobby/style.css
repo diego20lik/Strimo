@@ -1,0 +1,77 @@
+/* @font-face {
+  font-family: "Zebulon";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Font/Zebulon\ Condensed.otf"); /* IE9 Compat Modes */
+
+body {
+  font-family: "Gotham";
+}
+html,
+body {
+  margin: 0px;
+  font-family: "Gotham";
+  /* background-color: #fcfeff; */
+  /* background: linear-gradient(#81defe, #3e28b2); */
+}
+.degradado {
+  background: linear-gradient(#81defe, #3e28b2);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Gotham";
+}
+nav {
+  background-color: white;
+  padding-right: 200px;
+  margin-bottom: -5px;
+}
+nav .logo {
+  background-color: white;
+  width: 50%;
+}
+nav button {
+  border: none;
+  background-color: transparent;
+}
+nav li {
+  display: flex;
+  align-items: center;
+}
+nav .dropdown {
+  display: flex;
+  align-items: center;
+}
+nav .dropdown-toggle {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.dropdown-menu {
+  right: 0 !important;
+  left: auto !important;
+}
+.nueva-notificacion {
+  position: absolute;
+  padding: 3px;
+  background-color: #5b78d3;
+  width: 10px;
+  height: 10px;
+  bottom: 13px;
+  left: 35px;
+  border-radius: 100%;
+}
+@media (max-width: 767px) {
+  nav a img {
+    width: 100%;
+  }
+  .dropdown-menu {
+    border-style: none;
+    padding-left: 5%;
+  }
+}

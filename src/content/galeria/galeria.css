@@ -1,0 +1,36 @@
+.crea {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: 0.5s;
+}
+.crea Link h3 {
+  margin: 0;
+}
+.crea:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #ffffff48;
+  border-radius: 25px;
+}
+.crea-link {
+  color: white !important;
+  margin: 0;
+}
+.crea-link:hover {
+  color: black !important;
+}
+.fondo-blanco {
+  background-color: white;
+}
+.hoover-nft {
+  opacity: 0.85;
+  transition: 0.5s;
+}
+.hoover-nft:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.05);
+}

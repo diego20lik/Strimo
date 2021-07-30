@@ -1,0 +1,92 @@
+.pre-buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+.caja-link {
+  display: flex;
+  width: 50%;
+  margin: 5px!important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  height: 60vh;
+  min-height: 300px;
+  border-radius: 30px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  transition: 0.2s;
+}
+.caja-link:hover {
+  transition: 0.2s;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+.caja-link h1 {
+  /* text-decoration: transparent; */
+  text-decoration: none !important;
+  color: black;
+}
+.straming-background {
+  transition: 2s;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  margin: 0;
+  background-position: center;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8) 60%,
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("../images/backgroundImagen.png");
+
+  background-position: center;
+  transform: scale(1.2);
+}
+.straming-background:hover {
+  transform: scale(1);
+  transition: 0.5s;
+}
+.straming-background:hover ~ .pre-title{
+  transition: 0.7s;
+  transform: scale(1.5);
+}
+.pre-title{
+  pointer-events: none;
+  transition: 0.7s;
+  position: absolute;
+  padding: 10px;
+  text-decoration: none;
+}
+.nft-background {
+  transition: 2s;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  margin: 0;
+  background-position: center;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8) 60%,
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("../images/backgorundFinance.png");
+
+  background-position: center;
+  transform: scale(1.2);
+}
+.nft-background:hover {
+  transform: scale(1);
+  transition: 0.5s;
+}
+.nft-background:hover ~ .pre-title{
+  transition: 0.7s;
+  transform: scale(1.5);
+}

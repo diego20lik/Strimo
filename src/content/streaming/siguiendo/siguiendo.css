@@ -1,0 +1,17 @@
+.siguiendo-contenido{
+    width: 100%;
+    height: 100%;
+}
+.busqueda-2{
+    pointer-events: stroke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.barra-busqueda{
+    width: 100%;
+}

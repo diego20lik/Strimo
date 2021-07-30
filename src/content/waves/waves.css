@@ -1,0 +1,82 @@
+.olas {
+  height: 143px;
+  position: relative;
+}
+.wave-content-container-w {
+  background-color: white;
+}
+.wave-content-container-d {
+  max-width: -5px 0px;
+  padding: 40px 0px;
+  background-color: #3e28b2;
+}
+.voltear {
+  moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
+}
+.voltear > * {
+  margin-top: 1px;
+}
+.wavel-1 {
+  position: absolute;
+  background: url("../images/wave.png");
+  width: 100%;
+  overflow-x: hidden;
+  background-size: auto auto;
+  background-position: 0px 0px;
+  height: 143px;
+  background-repeat: repeat-x;
+  animation: animate-lineas 10s linear infinite;
+}
+.wavel-2 {
+  top: 0;
+  background-repeat: repeat-x;
+  background: url("../images/wave.png");
+  width: 100%;
+  opacity: 0.5;
+  overflow-x: hidden;
+  background-size: auto auto;
+  background-position: 100px 0px;
+  height: 143px;
+  margin: 0px 0px;
+  animation: animate-lineas-reverse 7s linear infinite;
+}
+.waved-1 {
+  position: absolute;
+  background: url("../images/waveb-1.png");
+  width: 100%;
+  overflow-x: hidden;
+  background-size: auto auto;
+  background-position: 0px 0px;
+  height: 143px;
+  background-repeat: repeat-x;
+  animation: animate-lineas reverse 10s linear infinite;
+}
+.waved-2 {
+  position: absolute;
+  background: url("../images/waveb-2.png");
+  opacity: 0.8;
+  width: 100%;
+  overflow-x: hidden;
+  background-size: auto auto;
+  background-position: 100px 0px;
+  height: 143px;
+  background-repeat: repeat-x;
+  animation: animate-lineas 5s linear infinite;
+}
+.waved-3 {
+  position: absolute;
+  background: url("../images/waveb-3.png");
+  width: 100%;
+  opacity: 0.7;
+  overflow-x: hidden;
+  background-size: auto auto;
+  background-position: 40px 0px;
+  height: 143px;
+  background-repeat: repeat-x;
+  animation: animate-lineas 7s linear infinite;
+}

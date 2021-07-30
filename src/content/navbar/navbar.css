@@ -1,0 +1,168 @@
+nav,
+.navbar {
+  background-color: white;
+  /* height:10vh; */
+  /* padding-right: 200px; */
+  /* padding: 20px 20px!important; */
+  min-height: fit-content;
+  transition: all 1s;
+  -webkit-box-shadow: 0px 9px 50px 5px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 9px 50px 5px rgba(0, 0, 0, 0.1);
+}
+nav .logo {
+  background-color: white;
+  width: fit-content;
+}
+nav button {
+  border: none;
+  background-color: transparent;
+}
+.nav-item {
+  /* white-space: nowrap; */
+}
+nav li {
+  display: flex;
+  align-items: center;
+}
+.nav-right {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+.nav-left {
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  /* width: 100%; */
+}
+nav .dropdown {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  width: fit-content;
+  /* transition: 1s; */
+  /* width: 100%; */
+  /* margin-left: 0; */
+  /* margin-right: auto; */
+  /* align-items: center; */
+}
+nav .dropdown-toggle {
+  padding: 5px;
+  display: flex;
+  /* white-space: nowrap; */
+}
+.dropdown-menu {
+  right: 0 !important;
+  /* width: 100% !important; */
+  left: auto !important;
+}
+.nueva-notificacion {
+  position: absolute;
+  padding: 3px;
+  background-color: #5b78d3;
+  width: 10px;
+  height: 10px;
+  bottom: 30%;
+  left: 35px;
+  border-radius: 100%;
+}
+.link-to-chats {
+  display: none;
+}
+.ver-mas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  color: black;
+  border-radius: 5px;
+  transition: 500ms;
+}
+.bell {
+  width: 40px !important;
+}
+.ver-mas:hover {
+  background-color: white;
+  transition: 500ms;
+}
+.imagen-perfil {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.nueva-notificacion-perfil {
+  position: absolute;
+  padding: 3px;
+  background-color: #5b78d3;
+  width: 10px;
+  height: 10px;
+  top: 13px;
+  left: 70%;
+  border-radius: 100%;
+}
+.slash {
+  color: #7f7f7f;
+}
+@media (max-width: 767px) {
+  nav {
+    display: flex;
+    justify-content: stretch !important;
+  }
+  .profile-image {
+    margin-left: auto !important;
+    order: 2;
+  }
+  .navbar-toggler {
+    order: 3;
+  }
+  .collapse {
+    order: 4;
+    animation: none;
+    transition: all 0s;
+  }
+  .imagen-perfil {
+    width: 50px;
+    height: auto;
+  }
+  nav a img {
+    width: 100%;
+    /* height: 50px; */
+  }
+  .logo {
+    max-width: 50%;
+  }
+  .slash {
+    display: none;
+  }
+  .dropdown-menu {
+    border-style: none;
+    padding-left: 5%;
+    width: 100% !important;
+    text-align: center;
+  }
+  .link-to-chats {
+    display: block;
+  }
+  nav .dropdown .nav-link {
+    right: 0 !important;
+    left: auto !important;
+    width: 100% !important;
+  }
+  nav .dropdown {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    transition: 1s;
+    /* width: 100%; */
+    margin-left: 0;
+    /* width: 100% !important; */
+    /* margin-right: auto; */
+    /* align-items: center; */
+  }
+  .nav-left {
+    flex-direction: column !important;
+    margin-left: 0px;
+  }
+}

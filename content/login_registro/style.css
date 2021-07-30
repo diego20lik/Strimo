@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Font/GothamLight.ttf"); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Zebulon";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Font/Zebulon\ Condensed.otf"); /* IE9 Compat Modes */
+}
+body {
+  font-family: "Gotham";
+}
+html,
+body {
+  margin: 0px;
+  font-family: "Gotham";
+  background-color: #fcfeff;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Gotham";
+}
+.logo {
+  background-color: #fcfeff;
+}
+.fondo {
+  background: #4b31ce;
+  display: flex;
+  height: fit-content;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.centered {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.left-side {
+  text-align: center;
+  color: white;
+}
+.form {
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 30vw;
+  background-color: #fcfeff;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0.1rem;
+  /* border-color: #3e27b5; */
+  padding: 3vw;
+}
+.col .right-side {
+}
+.form-section {
+  padding-right: 50px !important;
+}
+.title {
+  margin-top: 50px;
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* justify-content: justify; */
+}
+.form-element input {
+  width: 100%;
+  margin-top: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: #f3f3f3;
+  height: 30px;
+  border-radius: 5px;
+}
+.form-element .login {
+  min-width: 18em;
+}
+label {
+  font-style: 20px;
+  font-family: "Gotham";
+}
+.margenes-boton {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.tercero:hover {
+  cursor: pointer;
+  background-color: #3e27b5;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  transition: 0.5s;
+}
+.passwords {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.no-wrap {
+  white-space: nowrap;
+}
+.google-button {
+  /* display: flex; */
+  border-radius: 2px;
+  border-color: #4285f4;
+  border-style: solid;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  max-width: 220px;
+}
+.google-button:hover {
+  cursor: pointer;
+}
+.toggle:hover{
+  cursor: pointer!important;
+}
+@media (max-width: 767px) {
+  .form-element {
+    width: 100%;
+  }
+  .left-side {
+    display: none;
+  }
+  .form {
+    max-width: 90%;
+  }
+}

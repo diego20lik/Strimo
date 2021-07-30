@@ -1,0 +1,26 @@
+.degradado-4 {
+  /* background: url("../images/backgroundImagen.png"); */
+  /* background: linear-gradient(25deg, #81defe 0%, #3e28b2 73%),
+    url("../images/backgroundImagen.png"); */
+  /* background: #eb01a5; */
+  background-image: url("../images/backgroundImagen.png"); /* fallback */
+  background-image: url("../images/backgroundImagen.png"),
+    linear-gradient(25deg, #81defe 0%, #3e28b2 73%);
+  /* linear-gradient(25deg, #81defe 0%, #3e28b2 73%); */
+  /* background-image: url("../images/backgroundImagen.png"); */
+}
+.fondo-oscuro {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 20px;
+}
+.landing-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .landing-countdown {
+    flex-direction: column;
+  }
+}

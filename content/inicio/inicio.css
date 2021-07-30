@@ -1,0 +1,175 @@
+.font-title {
+  font-family: "Fjalla One", sans-serif;
+}
+.jumbotron-landing-page {
+  padding: 50px;
+  padding-bottom: 80px;
+  background: linear-gradient(#81defe, #3e28b2);
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+  /* background: linear-gradient(
+      10deg,
+      rgba(255, 255, 255, 1) 17%,
+      rgba(252, 176, 69, 0) 17%
+    ),
+    linear-gradient(
+      350deg,
+      rgba(255, 255, 255, 1) 17%,
+      rgba(252, 176, 69, 0) 17%
+    ),
+    linear-gradient(#81defe, #3e28b2); */
+}
+.blanco {
+  color: white !important;
+}
+.info-landing {
+  flex-direction: column;
+  min-height: 40vh;
+}
+.preventa {
+  flex-direction: column;
+  min-height: 80vh;
+}
+.background-image-info {
+  background-image: url("../images/backgroundImagen.png");
+  background-size: auto 100%;
+}
+.burbuja {
+  background-image: url("../images/burbuja.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* background-position-x: right; */
+  /* background-position-y: 70px; */
+}
+.caja-azul-claro {
+  padding: 20px;
+  background-color: #20c9ff;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: #1abae1;
+  width: fit-content;
+}
+.flecha {
+  padding: 100px;
+  background-color: #20c9ff;
+  clip-path: polygon(
+    0 30%,
+    60% 30%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 70%,
+    0 70%
+  );
+}
+.degradado-2 {
+  padding: 20px;
+  background: linear-gradient(white, #3e28b2);
+}
+.degradado-3 {
+  padding: 20px;
+  /* background: linear-gradient(#3e28b2, #81defe); */
+  /* background: rgb(34,193,195); */
+  background: linear-gradient(12deg, #81defe 0%, #3e28b2 73%);
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+  margin-top: -1px !important;
+}
+.laptop {
+  background-image: url("../images/backgroundLaptop.png");
+  background-size: 100% 100%;
+  min-height: 300px;
+}
+.fondo-purpura {
+  background: #3e28b2;
+}
+.border-azul {
+  border-style: solid;
+  border-color: #24afe8;
+  border-radius: 25px;
+  height: 100%;
+  max-height: 150px;
+}
+.prime-img {
+  border-radius: 25px;
+}
+.disney-img {
+  padding: 5px;
+  background: white;
+  border-radius: 25px;
+}
+.caja-blanca-2 {
+  -webkit-box-shadow: 0px 0px 22px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 22px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 22px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 25px;
+  padding: 40px;
+}
+.azul {
+  color: #1d295a;
+}
+.rojo {
+  color: #ab1c23;
+}
+.landing-page-planes {
+  background-image: url("../images/cintaAzul.png");
+  background-repeat: no-repeat;
+  padding-bottom: 75px;
+  height: 100% !important;
+}
+.to-bottom {
+  position: absolute;
+  bottom: 0;
+}
+.circle-border {
+  padding: 30px;
+  border-style: solid;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  border-color: #76e6fd;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.caja-3 {
+  -webkit-box-shadow: 0px 0px 22px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 22px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 22px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 25px;
+  background: linear-gradient(#81defe, #3e28b2);
+  padding: 40px;
+  height: 100% !important;
+}
+.caja-3 p {
+  margin: 0;
+}
+.footer {
+  background-color: #3e28b2;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .jumbotron-landing-page {
+    padding-top: 50px !important;
+    padding-bottom: 100px !important;
+  }
+  .background-image-info {
+    display: none;
+  }
+  .preventa {
+    min-height: 50vh;
+  }
+  .info-landing {
+    min-height: 60vh;
+    padding: 10%;
+  }
+  .flecha {
+    display: none;
+  }
+  .degradado-3 {
+    clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  }
+}

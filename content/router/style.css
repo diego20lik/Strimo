@@ -1,0 +1,137 @@
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: #81defe;
+  border-radius: 10px;
+  border-width: 1px;
+  border-left:solid;
+  border-left-color: white;
+  border-left-width:1px;
+  transition: all 1s;
+}
+::-webkit-scrollbar-thumb:hover{
+  transition: all 1s;
+  background: #3e28b2;
+}
+html, body, #root, .App {
+  height: 100%;
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Font/GothamLight.ttf"); /* IE9 Compat Modes */
+}
+.degradado {
+  background: linear-gradient(#81defe, #3e28b2);
+  min-height: 100%;
+}
+input {
+  border-color: transparent;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  height: 37px;
+}
+textarea {
+  border-color: transparent;
+  background-color: #f3f3f3;
+}
+.primario {
+  color: white;
+  border: transparent;
+  background-color: #3e27b5;
+  border-radius: 5px;
+  min-height: 37px;
+}
+.primario:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #3e27b5;
+  border-color: #3e27b5;
+  border-style: solid;
+  border-width: 1px;
+  transition: 0.5s;
+}
+.secundario {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #3e27b5;
+  /* width: 40%; */
+  border: transparent;
+  background-color: #fcfeff;
+  border-color: #3e27b5;
+  border-style: solid;
+  border-width: 1px;
+  min-height: 37px;
+}
+.secundario:hover {
+  cursor: pointer;
+  background-color: #3e27b5;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  transition: 0.5s;
+}
+.tercero {
+  border-radius: 5px;
+  /* margin-bottom: 10px; */
+  color: #3e27b5;
+  /* width: 40%; */
+  border: transparent;
+  background-color: #fcfeff;
+  /* border-color: #3e27b5; */
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  min-height: 37px;
+}
+.nsfw{
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: red;
+  color: red;
+  border-width: 1px;
+  width: fit-content;
+  opacity: 0.7;
+}
+.privado{
+  opacity: 0.7;
+  width: fit-content;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: blue;
+  color: blue;
+  border-width: 1px;
+}
+.horizontal-center{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.texto-vertical{
+  writing-mode: tb-rl;
+}
+.separa-lineas{
+  background: url("../images/lineas.png"); 
+  width: 100%;
+  overflow-x: hidden;
+  background-size: auto 100%;
+  background-position: 0px 0px ;
+  padding: 50px;
+  margin: 5px 0px;
+  animation: animate-lineas 10s linear infinite;
+}
+@keyframes animate-lineas {
+  0% {
+     background-position: 0 0;
+  }
+  100% {
+     background-position: -100% 0;
+  }
+}

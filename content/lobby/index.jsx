@@ -1,0 +1,30 @@
+import React /*{ useState }*/ from "react";
+import { useLocation } from "react-router-dom";
+// import Navbar from "./navbar";
+import Index from "./contenido";
+import { Link } from "react-router-dom";
+import Err from "../popup/err"
+import "./style.css";
+function Lobby() {
+  let location = useLocation();
+  return (
+    <div>
+      <div className="degradado">
+        {/* <Navbar /> */}
+        {/* <Link
+          to={{
+            pathname: `/pop`,
+            // This is the trick! This link sets
+            // the `background` in location state.
+            state: { background: location },
+          }}
+        >
+          AaAaA
+        </Link> */}
+        <Index />
+      </div>
+    </div>
+  );
+}
+
+export default Lobby;

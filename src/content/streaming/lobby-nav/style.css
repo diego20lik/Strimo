@@ -1,0 +1,27 @@
+.lobby-nav {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+  background-color: #f3f3f3;
+  width: 100vw !important;
+  height: 7vh !important;
+  z-index: 3;
+  padding: 10px;
+}
+.lobby-nav > * {
+  margin-bottom: 0px;
+}
+.search-lobby {
+  display: flex;
+  margin: 0px 10px;
+}
+.search-lobby > input {
+  border-style: solid !important;
+  border-color: black !important;
+  border-width: 1px;
+  margin-right: 10px;
+}
